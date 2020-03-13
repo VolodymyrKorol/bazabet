@@ -1,0 +1,870 @@
+@font-face {
+    font-family: "GothaProBlaIta";
+    src: url("fonts/GothamCyrillic/GothaProBlaIta.otf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "GothaProBla";
+    src: url("fonts/GothamCyrillic/GothaProBla.otf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "GothaProMedIta";
+    src: url("fonts/GothamCyrillic/GothaProMedIta.otf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #000;
+    overflow-x: hidden;
+}
+.clear{
+    clear: both;
+}
+.banner-parallax {
+    width: 100%;
+    height: 780px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 21;
+}
+.banner {
+    width: 105%;
+    background-image: url(img/bgMain.png);
+    /*height: 1200px;*/
+    /* background-size: cover; */
+    background-repeat: no-repeat;
+    background-position: center top;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.content-container {
+    max-width: 1100px;
+    margin: 0% auto;
+    position: relative;
+}
+
+.content-container header {
+    display: flex;
+    border-bottom: 1px solid rgba(146, 146, 146, 0.6);
+}
+
+.header-item {
+    flex: 1;
+    height: 90px;
+}
+
+.logo-img {
+    padding: 30px 0px 30px 0px;
+
+}
+
+.tagline-container h1 span {
+    color: #00d15d;
+}
+
+.tagline-container h1 {
+    font-family: "GothaProBlaIta";
+    font-size: 16px;
+    color: #fff;
+    padding: 37px 0px 37px 0px;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.banner-text {
+    max-width: 440px;
+    text-shadow: 0px 2px 3px #000000;
+
+}
+
+.banner-text .hundred {
+    font-size: 158px;
+    color: #00d15d;
+
+}
+
+.banner-text h1:first-child {
+    padding-top: 30px;
+}
+
+.banner-text h1 {
+    font-family: "GothaProBlaIta";
+    font-size: 118px;
+    margin: 0;
+    line-height: 118px;
+    color: #fff;
+}
+
+.banner-text h3 {
+    padding-top: 20px;
+    font-family: "GothaProBlaIta";
+    font-size: 37px;
+    margin: 0;
+    line-height: 42px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.banner-text h4 span {
+    font-size: 31px;
+    color: #00d15d;
+}
+
+.banner-text h4::before {
+    content: '';
+    width: 140%;
+    height: 80px;
+    z-index: -2;
+    top: -5px;
+    left: -33px;
+    position: absolute;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.48) 16%, rgba(0, 0, 0, 0.62) 50%, rgba(0, 0, 0, 0.48) 83%, rgba(0, 0, 0, 0) 100%);
+}
+
+.banner-text h4 {
+    font-family: "GothaProBlaIta";
+    font-size: 27px;
+    position: relative;
+    margin: 0;
+    line-height: 34px;
+    color: #fff;
+    margin-top: 42px;
+    text-shadow: 0px 0.5px 3px #000000;
+    text-transform: uppercase;
+}
+
+
+#get-bonus-btn:before {
+    content: '';
+    height: 100%;
+    width: 1.2em;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translateX(-4em) skew(-45deg);
+    background-color: rgba(256,256,256,0.5);
+    animation: movement-light 3s infinite;
+}
+@keyframes movement-light {
+    0%{
+       transform: translateX(-4em) skew(-45deg);
+    }
+    40%{
+        transform: translateX(-4em) skew(-45deg);
+
+    }
+    58%{
+        transform: translateX(20em) skew(-45deg);
+
+    }
+    100%{
+        transform: translateX(20em) skew(-45deg);
+
+    }
+}
+
+#get-bonus-btn {
+    z-index: 22;
+    display: block;
+    background: linear-gradient(to bottom, rgba(250, 216, 113, 1) 0%, rgba(234, 169, 28, 1) 100%);
+    font-family: "GothaProBlaIta";
+    font-size: 30px;
+    margin: 0;
+    position: relative;
+    transition: 0.2s;
+    line-height: 78px;
+    text-align: center;
+    color: #242426;
+    overflow: hidden;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 25px;
+    text-shadow: none;
+    height: 80px;
+    margin-top: 45px;
+    -webkit-box-shadow: 0px 2px 9px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 2px 9px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 2px 9px 0px rgba(0, 0, 0, 0.75);
+    animation: tremble 0.3s linear infinite;
+}
+#get-bonus-btn:hover {
+    line-height: 83px;
+    font-size: 32px;
+    height: 85px;
+    width: 444px;
+    margin-top: 42px;
+    margin-left: -2px;
+    background: linear-gradient(to bottom, rgba(247,221,148,1) 0%, rgba(235,178,65,1) 100%);
+}
+@keyframes tremble {
+    0%{
+        transform: rotate(0deg);
+    }
+    25%{
+        transform: rotate(0.3deg);
+    }
+    50%{
+        transform: rotate(-0.3deg);
+    }
+    75%{
+        transform: rotate(0.3deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+.player {
+    position: absolute;
+    z-index: 10;
+}
+
+.blue-player-left {
+    top: 442px;
+    left: 130px;
+    background-image: url(img/bluePlayerLeft.png);
+    width: 100px;
+    height: 128px;
+    background-size: cover;
+    background-position-x: center;
+}
+
+.red-player-left {
+    top: 444px;
+    left: 14px;
+    background-image: url(img/redPlayerLeft.png);
+    background-position: -40px 0px;
+    width: 100px;
+    height: 112px;
+    background-size: cover;
+    background-position-x: center;
+
+}
+
+.blue-player-right {
+    top: 427px;
+    right: 130px;
+    background-image: url(img/bluePlayerRight.png);
+    width: 100px;
+    height: 128px;
+    background-size: cover;
+    background-position-x: center;
+}
+
+.red-player-right {
+    top: 449px;
+    right: 14px;
+    background-image: url(img/redPlayerRight.png);
+    background-position: -40px 0px;
+    width: 100px;
+    height: 123px;
+    background-size: cover;
+    background-position-x: center;
+}
+
+.banner-content-container {
+    display: flex;
+    height: 580px
+}
+
+.banner-content-item {
+    flex: 1;
+}
+
+.image-player-truck-container {
+    position: relative;
+}
+
+.player-front {
+    position: absolute;
+    top: 235px;
+    left: -81px;
+    z-index: 20;
+    width: 480px;
+    height: 385px;
+}
+
+.truck {
+    position: absolute;
+    top: 161px;
+    left: 34px;
+    z-index: 10;
+    width: 780px;
+    height: 452px;
+}
+
+
+.step-line {
+    background: linear-gradient(to right, rgba(0, 0, 0, 1) 0%, rgba(7, 92, 3, 1) 34%, rgba(12, 164, 6, 1) 50%, rgba(7, 92, 3, 1) 66%, rgba(0, 0, 0, 1) 100%);
+    height: 150px;
+    margin-top: 75px;
+}
+
+.line-content-container {
+    display: flex;
+    padding-top: 30px;
+    padding-left: 40px;
+}
+
+.line-item {
+    flex: 1;
+    display: flex;
+}
+
+.outside-circle {
+    border-radius: 50%;
+    border: 4px solid #fff;
+    width: 90px;
+    height: 90px;
+    z-index: 20;
+
+}
+
+.inside-circle {
+    background: rgba(256, 256, 256, 0.3);
+    border-radius: 50%;
+    border: 4px solid transparent;
+    width: 66px;
+    margin-top: 8px;
+    margin-left: 8px;
+    height: 66px;
+}
+
+.inside-circle h1 {
+    margin: 0;
+    text-align: center;
+    line-height: 60px;
+    font-family: "GothaProBla";
+    color: #ffc539;
+    font-size: 56px;
+    text-transform: uppercase;
+}
+
+.line-item-text {
+    flex: 1;
+    position: relative;
+    left: -14px;
+    z-index: 10;
+}
+
+.line-item-text h1 {
+    color: #ffffff;
+    font-family: "GothaProBla";
+    font-size: 21px;
+    text-transform: uppercase;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.00) 0%, rgba(255, 255, 255, 0.03) 5%, rgba(255, 255, 255, 0.2) 30%, rgba(255, 255, 255, 0.2) 100%);
+    max-width: 225px;
+    height: 68px;
+    padding-left: 25px;
+    line-height: 68px;
+    border-radius: 15px;
+    margin-top: 10px;
+}
+
+.arrow {
+    width: 32px;
+    height: 32px;
+    top: 30px;
+    position: absolute;
+    fill: #fff;
+    animation: move-light 0.7s linear infinite;
+}
+
+@keyframes move-light {
+    0% {
+        fill-opacity: 1;
+    }
+    100% {
+        fill-opacity: 0.5;
+    }
+}
+
+
+.arrows-container {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    margin-left: -7px;
+}
+
+.arrows-container .arrow:first-child {
+    left: 0px;
+    fill-opacity: 0.4;
+}
+
+.arrows-container .arrow:nth-child(2) {
+    left: 8px;
+    fill-opacity: 0.7;
+    animation-delay: 0.2s;
+
+
+}
+
+.arrows-container .arrow:last-child {
+    left: 16px;
+    fill-opacity: 1;
+    animation-delay: 0.4s;
+
+}
+
+.features-container {
+    display: flex;
+
+}
+
+.feature-item {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    background-color: #262626;
+    height: 75px;
+    border-radius: 8px;
+    margin: 40px 5px 0px 5px;
+}
+
+.feature-item p {
+    color: #fff;
+    font-size: 13px;
+    font-family: "GothaProMedIta";
+    padding-top: 15px;
+    line-height: 15px;
+    padding-bottom: 10px;
+}
+
+.feature-item img {
+    padding: 15px 10px 15px 20px;
+
+}
+
+.payments-container {
+    padding: 40px 50px 60px 50px;
+    border-bottom: 1px solid #262626;
+    border-top: 1px solid #262626;
+    margin-top: 40px;
+}
+
+.payment-item {
+    float: left;
+    padding: 0px 32px 0px 32px;
+}
+#copyright{
+    font-family: "GothaProMedIta";
+    font-size: 11px;
+    text-transform: uppercase;
+    line-height: 80px;
+    color: #444444;
+    text-align: center;
+}
+.moneyUp{
+    animation: moneyUp 1.1s linear 1;
+    transform: translateY(-1300px);
+    transform-origin: top;
+    font-size: 10px;
+
+}
+.moneyLeft{
+    animation: moneyLeft 1.1s linear 1;
+    font-size: 10px;
+    transform: translateY(-1300px);
+    transform-origin: top;
+}
+.moneyRight{
+    animation: moneyRight 1.1s linear 1;
+    transform: translateY(-1300px);
+    transform-origin: top;
+    font-size: 10px;
+}
+.moneyDown{
+    animation: moneyDown 3s linear 1;
+    transform: translateY(-1300px);
+
+}
+
+@keyframes moneyDown{
+    0%{
+        font-size: 11px;
+        transform:  translate(0px);
+    }
+    100%{
+        font-size: 11px;
+        transform:  translateY(650px);
+    }
+
+}
+@keyframes moneyUp {
+    0%{
+        font-size: 11px;
+        transform:  translate(0px,0px);
+    }
+    100%{
+        font-size: 11px;
+        transform:  translate(0px,-400px);
+    }
+
+}
+
+@keyframes moneyLeft {
+    0%{
+        font-size: 11px;
+        transform: rotate(0deg) translate(0px,0px);
+    }
+    100%{
+        font-size: 11px;
+        transform: rotate(-15deg) translate(0px,-400px);
+    }
+}
+
+@keyframes moneyRight {
+    0%{
+        font-size: 11px;
+        transform: rotate(0deg) translate(0px,0px);
+    }
+    100%{
+        font-size: 11px;
+        transform: rotate(15deg) translate(0px,-400px);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1470px) {
+    .player{
+        display: none;
+    }
+}
+@media (max-width: 1100px) {
+    .tagline-container {
+        display: none;
+    }
+.line-content-container{
+    padding-left: 0;
+}
+.banner{
+        width: 100%;
+    }
+    .content-container header {
+        display: block;
+        border-bottom: none;
+    }
+    .logo-img{
+        display: block;
+        margin: 0 auto;
+    }
+
+   .banner-text{
+       margin-left: 70px;
+   }
+
+    .banner-content-container{
+        height: 575px;
+    }
+    .truck{
+        height: 332px;
+        width: 536px;
+        top: 203px;
+        left: calc(50% - 210px);
+    }
+
+    .player-front {
+        height: 257px;
+        width: 297px;
+        top: 284px;
+        left: calc(50% - 260px);
+    }
+    .image-player-truck-container{
+        margin-right: 100px;
+        width: 100%;
+    }
+    .banner-text .hundred {
+        font-size: 117px;
+
+    }
+    .banner-text{
+        max-width: 340px;
+    }
+    .banner-text h1{
+        font-size: 90px;
+        line-height: 90px;
+    }
+
+    .banner-text h3 {
+        font-size: 27px;
+        line-height: 28px;
+
+    }
+
+    .banner-text h4 span {
+        font-size: 25px;
+    }
+
+    .banner-text h4 {
+        font-size: 21px;
+        line-height: 34px;
+    }
+    .line-content-container{
+        display: block;
+    }
+    .step-line{
+        height: auto;
+        padding-bottom: 20px;
+    }
+    .line-item{
+        width: 316px;
+        margin: 10px auto;
+    }
+    .arrows-container{
+        display: none;
+    }
+    .features-container{
+        display: block;
+    }
+    .feature-item{
+        justify-content: center;
+        width: 85%;
+        margin: 20px auto;
+    }
+    .payment-item{
+        width: 30%;
+        margin-top: 30px;
+    }
+    .banner-content-container{
+     margin-top: 60px;
+    }
+    .payments-container{
+        display: flex;
+        flex-wrap: wrap;
+
+        justify-content: center;
+
+    }
+    .payment-item{
+        width: 30%;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 850px) {
+    .banner-content-container{
+        margin-top: 0px;
+    }
+    .banner-content-container{
+        height: 775px;
+    }
+    .banner{
+        /*background-image: url(img/bgMob.png);*/
+    }
+    .banner-content-container{
+        display: block;
+    }
+    .banner-text h4 {
+    margin-top: 350px;
+    }
+    .banner-text{
+        margin: 0 auto;
+    }
+
+    .image-player-truck-container{
+        position: absolute;
+        top: 0;
+    }
+
+    .truck{
+        height: 332px;
+        width: 536px;
+        top: 358px;
+        left: calc(50% - 234px);
+    }
+
+    .player-front {
+        height: 257px;
+        width: 297px;
+        top: 442px;
+        left: calc(50% - 284px);
+    }
+}
+
+@media (max-width: 600px) {
+    .payments-container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0px 50px 25px 50px;
+    }
+    .payment-item:nth-child(1){
+        order:3
+    }
+    .payment-item:nth-child(2){
+        order: 0;
+    }
+    .payment-item:nth-child(3){
+        order: 2;
+    }
+    .payment-item:nth-child(4){
+        order: 4;
+    }
+    .payment-item:nth-child(5){
+        order: 5;
+    }
+    .payment-item:nth-child(6){
+        order: 6;
+    }
+    .payment-item{
+        width: auto;
+        padding: 0px 10px 0px 10px;
+    }
+}
+@media (max-width: 450px) {
+    .line-item {
+        width: 250px;
+    }
+    .outside-circle {
+        width: 82px;
+        height: 82px;
+    }
+    .inside-circle {
+        width: 58px;
+        margin-top: 8px;
+        margin-left: 8px;
+        height: 58px;
+    }
+    .inside-circle h1 {
+        line-height: 48px;
+        font-size: 46px;
+    }
+    .line-item-text h1 {
+        font-size: 16px;
+        max-width: 180px;
+        height: 60px;
+        line-height: 60px;
+    }
+    .payments-container {
+        padding: 0px 26px 30px 26px;
+    }
+    .feature-item p{
+        max-width: 132px;
+        display: block;
+    }
+    .truck{
+        height: 236px;
+        width: 360px;
+        top: 432px;
+        left: calc(50% - 150px);
+    }
+
+    .player-front {
+        height: 198px;
+        width: 242px;
+        top: 482px;
+        left: calc(50% - 205px);
+    }
+}
+@media (max-width:350px) {
+    #copyright {
+        line-height: 13px;
+        max-width: 240px;
+        display: block;
+        padding: 15px 0px 15px 0px;
+        margin: 0 auto;
+    }
+    .line-item-text h1{
+        font-size: 16px;
+    }
+    .payments-container {
+        margin: 0px 26px 0px 26px;
+        padding: 0;
+        padding-bottom: 30px;
+    }
+    .banner-content-container {
+        height: 430px;
+    }
+    #get-bonus-btn{
+        font-size: 20px;
+        height: 60px;
+        line-height: 58px;
+        border-radius: 12px;
+        margin-top: 10px;
+    }
+    .banner{
+        background-image: url("img/bgMob.png");
+        -webkit-background-size: 100%;
+        background-size: 100%;
+    }
+    .banner-text h1:first-child {
+        padding-top: 0px;
+    }
+    .logo-img {
+        padding: 10px 0px 10px 0px;
+    }
+    .header-item {
+        height: 50px;
+    }
+    .banner-text{
+        max-width: 230px;
+    }
+    .banner-text .hundred{
+        font-size: 82px
+    }
+    .banner-text h1{
+        font-size: 61px;
+        line-height: 60px;
+    }
+
+
+    .banner-text h3 {
+        font-size: 19px;
+        line-height: 15px;
+
+    }
+
+    .banner-text h4 span {
+        font-size: 17px;
+    }
+
+    .banner-text h4 {
+        font-size: 14px;
+        line-height: 20px;
+        margin-top: 215px;
+    }
+    .truck{
+        height: 196px;
+        width: 318px;
+        top: 213px;
+        left: calc(50% - 145px);
+    }
+
+    .player-front {
+        height: 174px;
+        width: 211px;
+        top: 259px;
+        left: calc(50% - 195px);
+    }
+}
+
+
+
+
+
+
+
